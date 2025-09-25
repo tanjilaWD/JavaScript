@@ -55,4 +55,59 @@ function sumOddNumbers(arr){
 }
 console.log(sumOddNumbers([5,15,8,7]));
 //
-
+function smallerofTwo(Arr){
+    return Arr[0] < Arr[1] ? Arr[0] : Arr[1];
+}
+console.log(smallerofTwo([20,45,78]));
+//
+function checkAge(age){
+    if(age < 18) return 18;
+    else if (age > 45) return 45;
+    else return age;
+}
+console.log(checkAge(12));
+console.log(checkAge(60));
+console.log(checkAge(30));
+//
+function sumDivisionBy4(arr){
+    let sum = 0;
+    for(let num of arr){
+        if(num % 4 === 0){
+            sum += num;
+        }
+    }
+    return sum;
+}
+console.log(sumDivisionBy4([2,4,5,7,8,32,45]));
+//
+function processNumber(num){
+    if(num < 20){
+        return num * 2;
+    }else{
+        return num/20
+    }
+}
+console.log(processNumber(10));
+console.log(processNumber(40));
+//
+function sumNegative(arr){
+    let sum = 0;
+    for(let num of arr){
+        if(num < 0){
+            sum += num;
+        }
+    }
+    return sum;
+}
+console.log(sumNegative([5,-3,-10,7,-2]));
+//
+function sumDivisionBy3(arr){
+    let sum = 0;
+    for(let num of arr){
+        if(num % 3 === 0){
+            sum += num;
+        }
+    }
+    return sum;
+}
+console.log(sumDivisionBy3([3,6,7,11,12]));
