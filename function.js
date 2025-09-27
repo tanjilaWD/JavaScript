@@ -111,3 +111,15 @@ function sumDivisionBy3(arr){
     return sum;
 }
 console.log(sumDivisionBy3([3,6,7,11,12]));
+
+
+//
+function shopping(L,S,Su){
+    const lPrice = 1200;
+    const sPrice = 750;
+    const suPrice = 450;
+
+    const totalPrice = lPrice*L + sPrice*S + suPrice*Su;
+    return totalPrice;
+}
+ console.log(shopping(5,2,5)); // output: 9750
