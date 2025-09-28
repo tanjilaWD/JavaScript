@@ -41,3 +41,17 @@ function cmToMeter(cm){
 }
 console.log(cmToMeter(250));
 //
+function inchToCm(inch){
+    return inch* 2.54;
+}
+console.log(inchToCm(12));
+//
+function poundToKm(pound){
+    return pound * 0.453;
+}
+console.log(poundToKm(10));
+//
+function yardToMeter(yard){
+    return yard * 0.91;
+}
+console.log(yardToMeter(5));
