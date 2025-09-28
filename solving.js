@@ -20,3 +20,24 @@ function mileToKilometer(mile){
     return kilo;
 }
 console.log(mileToKilometer(10));
+//
+function mileToYard(mile){
+    return mile * 1760;
+}
+console.log(mileToYard(13));
+//
+function kwToCalorie(kwh){
+    return kwh * 860;
+}
+console.log(kwToCalorie(5));
+//
+function hourToSec(hour){
+       return hour * 60* 60;
+}
+console.log(hourToSec(2));
+//
+function cmToMeter(cm){
+    return cm/100;
+}
+console.log(cmToMeter(250));
+//
