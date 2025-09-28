@@ -55,3 +55,44 @@ function yardToMeter(yard){
     return yard * 0.91;
 }
 console.log(yardToMeter(5));
+//
+function isLeapYear(year){
+    if(year % 4 === 0){
+        return true;
+    }else{
+        return false;
+    }
+}
+const isLipi1 = isLeapYear(2043);
+const isLipi2 = isLeapYear(2052);
+console.log(isLipi1);
+console.log(isLipi2);
+//
+function isLeapYear2(year){
+    if(year % 400 === 0){
+        return true;
+    }
+    else if (year % 400 !== 0 && year % 100 === 0){
+        return false;
+    }
+}
+//
+function isLeapYear3(year){
+    if (year % 400 === 0){
+        return true;
+    }
+    else if (year % 100 === 0){
+        return false;
+    }
+    else if(year % 4 === 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+const isLip1 = isLeapYear3(2100);
+const isLip2 = isLeapYear3(2400);
+const isLip3 = isLeapYear3(1900);
+const isLip4 = isLeapYear3(2052);
+console.log(isLip1,isLip2,isLip3,isLip4);
