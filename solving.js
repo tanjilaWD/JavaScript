@@ -96,3 +96,22 @@ const isLip2 = isLeapYear3(2400);
 const isLip3 = isLeapYear3(1900);
 const isLip4 = isLeapYear3(2052);
 console.log(isLip1,isLip2,isLip3,isLip4);
+//
+function calculateTax(income){
+    if(income <= 50000){
+        return income * 0.10;
+    }
+    else if(income <= 100000){
+        return income * 0.20;
+    }
+    else if(income <= 200000){
+        return income * 0.30;
+    }
+    else{
+        return income * 0.40;
+    }
+}
+console.log(calculateTax(450000));
+console.log(calculateTax(12000));
+console.log(calculateTax(240000));
+//
