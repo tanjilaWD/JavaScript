@@ -115,3 +115,19 @@ console.log(calculateTax(450000));
 console.log(calculateTax(12000));
 console.log(calculateTax(240000));
 //
+function oddAverage(numbers){
+     for(const number of numbers){
+        console.log(number);
+     }
+}
+const nums = [12,13,65,11,24,31];
+oddAverage(nums);
+//
+function oddAveragee(numbers){
+    const odds = [];
+    for(const number of numbers){
+        if(number % 2 === 1){
+            odds.push(number);
+        }
+    }
+}
