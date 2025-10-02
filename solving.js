@@ -131,3 +131,16 @@ function oddAveragee(numbers){
         }
     }
 }
+//
+function OddAverage(numbers){
+    const odds = [];
+    for(const number of numbers){
+        if(number % 2 === 1){
+            odds.push(number);
+        }
+    }
+    console.log(odds);
+}
+const nums1 = [12,13,65,11,24,31];
+const oddNumberAvg =OddAverage(nums1);
+
