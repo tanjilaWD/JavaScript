@@ -85,3 +85,18 @@ function createArray(a=5,b=10,c=15){
 }
 console.log(createArray(2,4,6));
 console.log(createArray());
+//
+function simpleInterest(principle = 1000, rate = 5){
+    const interest = (principle * rate)/ 100;
+    return interest;
+}
+console.log(simpleInterest());
+console.log(simpleInterest(2000,10));
+//
+function salaryAfterTax(salary=50000, tax=10){
+    const taxAmount = (salary * tax)/100;
+    const netSalary=salary - taxAmount;
+    return netSalary;
+}
+console.log(salaryAfterTax());
+console.log(salaryAfterTax(60000,15));
