@@ -69,7 +69,35 @@ const isFruit = ['Apple', 'Banana', 'Mango'];
 const third = `My favorite fruit is: ${isFruit[2]}`;
 console.log(third);
 //
+const A = 50;
+const B = 10;
+const tem = 'The division of a and b is ' + (A/B);
+console.log(tem);
+//
+const person = {
+    firstName: 'Amir',
+    lastName: 'Kumar'
+}
+const fullName = ' Full Name: ' +  person.firstName  +  person.lastName;
+console.log(fullName);
+//
+const animals = ['Cat', 'Dog','Elephant'];
+const fev = `My favorite animals are ${animals[0]}  ${animals[1]} ${animals[2]}`;
+console.log(fev);
+//
+const student ={
+    name:'Tanjila Khatun',
+    age: 20,
+    results: [80,78,97]
+} 
+function showStudentInfo(student){
+    const total = student.results[0]+ student.results[1]+ student.results[2];
+    const avg = total / 3;
 
-
-
+console.log('Student Name:', student.name);
+console.log('Age:', student.age);
+console.log('Marks:', student.results);
+console.log('Average Marks:', avg.toFixed(2));
+}
+showStudentInfo(student);
 
