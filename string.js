@@ -54,3 +54,22 @@ const greet = function(name){
 };
 console.log(greet('Bithi'));
 //
+const x = 20;
+const y = 80;
+const results = ' The difference between ' + (x+y) + ' and '+ x + ' is '+ y;
+console.log(results)
+//
+const isName = 'Bithi';
+const isAgee = 20;
+const isSalary = 50000;
+const employee = 'Name: ' + isName + ' Age: ' + isAgee + ' Salary: ' + isSalary ;
+console.log(employee);
+//
+const isFruit = ['Apple', 'Banana', 'Mango'];
+const third = `My favorite fruit is: ${isFruit[2]}`;
+console.log(third);
+//
+
+
+
+
