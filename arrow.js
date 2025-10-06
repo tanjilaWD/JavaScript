@@ -59,3 +59,34 @@ Person.greetArrow();
 const greet = (name = 'Guest')=> `Hello, ${name}!`;
 console.log(greet());
 console.log(greet('Tanjila'));
+//
+const getObject = ()=>({ key:'value'});
+console.log(getObject());
+//
+function getFirstElement(arr){
+    return arr[0];
+}
+console.log(getFirstElement([10,20,30]));
+//
+function multiplyThreeNumbers(a,b,c){
+    return a*b*c;
+}
+console.log(multiplyThreeNumbers(2,3,4));
+//
+const getUnkown = () => 'unknown';
+console.log(getUnkown());
+//
+const perSon ={
+    name:'Tanjila',
+    money: 100
+};
+const divideMoney = (obj)=> obj.money/5;
+console.log(divideMoney(perSon));
+//
+const sumFirstLast = (arr) => arr[0] + arr[arr.length -1];
+console.log(sumFirstLast([10,20,30,40]));
+//
+const addNumbers =(a = 10, b = 5)=> a+b;
+console.log(addNumbers(2,3));
+console.log(addNumbers(2));
+console.log(addNumbers());
