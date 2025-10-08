@@ -1,9 +1,10 @@
-const actor ={
-    name: 'Tanjila',
-    age: 20,
-    phone:'01934129995',
-    money: 123334
-}
+// const actor ={
+//     name: 'Tanjila',
+//     age: 20,
+//     phone:'01934129995',
+//     money: 123334
+// }
+
 // const name = actor.name;
 // const age = actor.age;
 // const phone = actor.phone;
@@ -16,9 +17,9 @@ const actor ={
 // console.log(money);
 // console.log(phone);
 //
-const {name, age:boyos, money,phone}= actor;
-console.log(name);
-console.log(boyos);
+// const {name, age:boyos, money,phone}= actor;
+// console.log(name);
+// console.log(boyos);
 //
 const book ={ title:'1984',author:'Tanjila'};
 const {title:bookTitle, author:bookAuthor} = book;
@@ -57,3 +58,16 @@ const [,secondd,fourth] = numberss;
 console.log(secondd);
 console.log(fourth);
 //
+const product = {name:'Laptop',price:50000,brand:'Dell'};
+const{brand}=product;
+console.log(brand);
+//
+const Item ={
+    name:'Mobile',
+    price:20000,
+    phone:'Sumsung'
+}
+const phone = Item.phone;
+const price = Item.price;
+console.log(phone,price);
+
