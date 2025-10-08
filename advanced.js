@@ -26,10 +26,10 @@ const {title:bookTitle, author:bookAuthor} = book;
 console.log(bookTitle);
 console.log(bookAuthor);
 //
-const numbers = [45,99];
-const [first,second] = numbers;
-console.log(first);
-console.log(second);
+// const numbers = [45,99];
+// const [first,second] = numbers;
+// console.log(first);
+// console.log(second);
 //
 function doubleThem(a,b){
     return[a*2,b*2];
@@ -70,4 +70,36 @@ const Item ={
 const phone = Item.phone;
 const price = Item.price;
 console.log(phone,price);
-
+//
+// const colors = ['red','blue','green','yellow'];
+// const [first,second] = colors;
+// console.log(first);
+// console.log(second);
+//
+const num = [10,20,30];
+const[,second] = num;
+console.log(second);
+//
+const digits = [2,4,6,8];
+const[two, , ,eight]=digits;
+console.log(two,eight);
+//
+function multiply(a,b){
+    return [a*3, b*3];
+}
+const [firstValue,secondValue]=multiply(2,5);
+console.log(firstValue,secondValue);
+//
+const person1 = {
+  name:'Rahim',
+  city:'Dhaka'
+};
+const{name,city,phone0='N/A'}=person1;
+console.log(name,city,phone0);
+//
+const teacher = {
+    name:'Maria',
+    profession:'Teacher'
+}
+const {name:teacherName,profession:job}=teacher;
+console.log(teacherName,job);
