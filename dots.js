@@ -38,3 +38,32 @@ const person = {name: 'Amit', age:30};
 const clonePerson = {...person};
 console.log(clonePerson);
 //
+const student = {name:'Rafi'};
+const updateStudent = {...student, age:22,Roll:2335};
+console.log(updateStudent);
+//
+const technologies = ['condition','array','loop'];
+const newArray=['variable',...technologies];
+console.log(newArray);
+//
+const fruitss = ['Apple','Banana','Mango'];
+const myFruits = [...fruitss,'papaya','orange'];
+console.log(myFruits);
+//
+const frontEnd = ['JavaScript'];
+const backEnd = ['Node.js'];
+const database = ['MongoDB'];
+const fullstack = [...frontEnd,...backEnd,...database];
+console.log(fullstack);
+//
+const website = {name:'Mysite', type:'e-commerce',status:'active'};
+const updateWebsite = {...website, them:'dark'};
+console.log(updateWebsite);
+//
+const young = {name:'Arif',age:30, country:'B Baria'};
+const{country,...youngCopy}=young;
+console.log(youngCopy);
+//
+const car = {make:'Toyota', model:'Corolla', year:2020};
+const updateCar = {...car, year:2032};
+console.log(updateCar);
