@@ -52,3 +52,47 @@ console.log(result);
 //
 const result2 = 'I'.concat(' love ', 'JavaScript ');
 console.log(result2);
+//
+const str0 = 'javaScript Essentials';
+const extractedPart = str0.substring(4,8);
+console.log(extractedPart);
+//
+const frnd = 'Raju,Rana, Hasan,Kabir,Mahi';
+const frndArr = frnd.split(',');
+console.log(frndArr);
+//
+const friendString = frndArr.join(',');
+console.log(friendString);
+//
+const text = 'function if else while';
+const textArray = text.split(' ');
+console.log(textArray);
+//
+const language = ["JavaScript","Python","Java"];
+const languagewithSemi = language.map(lang => lang + ';');
+console.log('Language with semicolon:', languagewithSemi);
+//
+const loops = 'for,while,for-in,for-of,do-while';
+const loopArray = loops.split(',');
+console.log(loopArray);
+//
+const messyString = ' console log debug';
+const cleand = messyString.trim();
+console.log(cleand);
+//
+const st1 = 'push';
+const st2 = 'pop';
+const st3 = 'shift';
+const st4 = 'unshift';
+const combined = st1.concat('', st2,'' ,st3,'',st4);
+console.log(combined);
+//
+const phrase = 'Hallo JavaScript Developers';
+const extracted = phrase.substring(6,16);
+console.log(extracted);
+//
+const codeStr = 'code more learn more';
+const beforeLearn = codeStr.substring(0,10);
+const afterLearn = codeStr.substring(15);
+const removeLearn = beforeLearn + afterLearn;
+console.log(removeLearn);
