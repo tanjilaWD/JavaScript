@@ -44,3 +44,24 @@ job:'backend developer'
  console.log('Before function call:', employee);
  updateJob(employee);
  console.log('After function call:', employee);
+ //
+ let Num = 15;
+ let copy = Num;
+ copy = 25;
+ console.log('Num', Num);
+ console.log('copy', copy);
+ //
+ let arr =[1,2,3];
+ let copyarr = arr;
+ copyarr.push(88);
+ console.log('arr', arr);
+ console.log('copyarr', copyarr);
+ //
+ let language = {
+    name: 'JS',
+    age: 30
+ };
+ let newVersion = {...language};
+ newVersion.location = 'Browser';;
+ console.log('language', language);
+ console.log('newVersion', newVersion);
