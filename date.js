@@ -1,8 +1,8 @@
 const now = new Date();
 console.log(now);
 //
-const specificDate = new Date('2025-10-21');
-console.log(specificDate);
+// const specificDate = new Date('2025-10-21');
+// console.log(specificDate);
 //
 const dateTime = new Date(2025,12,12,10,30,0);
 console.log(dateTime);
@@ -19,3 +19,16 @@ console.log(codeTime);
 const nowDate = new Date(2035,6,15,14,45,30);
 console.log(nowDate);
 //
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+console.log(currentYear);
+//
+const futureDate = new Date();
+futureDate.setFullYear(2040);
+console.log(futureDate.getFullYear());
+//
+const specificDate = new Date('2029-02-16');
+const dayNumber = specificDate.getDay();
+const days = ['Sunday','Monday','Tuesday','Wedneadey','Friday','Saturday'];
+console.log(specificDate.toDateString());
+console.log(days[dayNumber]);
