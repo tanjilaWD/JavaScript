@@ -67,3 +67,22 @@ function getPrice(product){
 }
 const price = getPrice(35);
 console.log(price);
+//
+// function getSecond(numbers){
+//     console.log(typeof numbers);
+//     const second = numbers[1];
+//     return second;
+// }
+// const second = getSecond([1,25,67]);
+// console.log(second);
+//
+function getSecond(numbers){
+    if(Array.isArray(numbers) == false){
+        return 'please provide an array';
+    }
+    const second = numbers[1];
+    return second;
+}
+const second = getSecond(60);
+console.log(second);
+//
