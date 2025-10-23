@@ -26,3 +26,7 @@ myMap.set('name','Tanjila');
 myMap.set('age', 20);
 console.log(myMap);
 //
+const  num = [1,2,2,3,4,4,5];
+const numdup = new Set(num);
+console.log(numdup);
+//
