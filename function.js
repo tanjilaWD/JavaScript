@@ -1,125 +1,255 @@
-function sumOfNumbers(){
+function fanOffKor() {
+    console.log('bosha thake uthe dara');
+    console.log('walk toward the switch');
+    console.log('click the switch to off of the fan');
+}
+fanOffKor();
+//
+function vatkhao(){
+    console.log('hand wash kore asho');
+    console.log('bosho');
+    console.log('plate e khabar dhabar nao');
+    console.log('gopat gopat kore khao');
 
 }
-const result = sumOfNumbers();
+vatkhao();
+//
+function am_khao(){
+    console.log('ei nao am khao');
+}
+am_khao();
+//
+function familyMem(){
+    console.log('Tanjila');
+    console.log('Sathy');
+    console.log('Feeha');
+}
+familyMem();
+//
+function doubleIt (number){
+    const doubled = number * 2;
+    console.log(doubled);
+}
+doubleIt(15);
+doubleIt(88);
+doubleIt(873);
+//
+function square (number){
+    const borgo = number * number;
+    console.log('square of', number, 'is:', borgo);
+}
+square(4);
+square(12);
+//
+function add (num1,num2){
+    const sum = num1 + num2;
+    console.log(sum);
+}
+add(5,71);
+//
+function addAll(a,b,c,d,e){
+    const total = a + b+ c+ d+ e;
+    console.log(total);
+}
+addAll(3,4,5,6,7);
+//
+function difference (num1, num2){
+    const diff = num1 - num2;
+    console.log(num1, num2, 'difference is', diff);
+}
+const fatherAge = 40;
+const myAge = 10;
+difference(fatherAge,myAge);
+//
+function addNumbers (a,b){
+    return a + b;
+}
+const result = addNumbers (5,8,9,6);
 console.log(result);
 //
-function sumOfNumber(number){
-    console.log(number);
-}
-const Result = sumOfNumber([12,45,6,8,14]);
-console.log(Result);
-//
-function sumOfNumBers(NumBers){
-    let Sum = 0;
-    for(const number of NumBers){
-        Sum = Sum + number;
-        console.log(Sum);
-    }
-}
-const nums = [54,62,12,6];
-const Sum = sumOfNumBers(nums);
-//
-function SumOfNumbers(Number){
-    let SUM = 0;
-    for(const number of Number){
-        SUM = SUM + Number;
-    }
-    return SUM;
-}
-const Nums = [54,62,12,6];
-const total = SumOfNumbers(Nums);
-console.log('Sum of Numbers is', total);
-//
-function evenNumbersSum (numbers){
+function addNum (a,b){
     let sum = 0;
-    for(const number of numbers){
-        if(number % 2 == 0){
-            sum = sum + number;
-        }
+    for(const num of arguments){
+        sum = sum + num;
     }
-    return sum;
+    console.log(sum);
 }
-const nums1 = [54,13,1,6];
-const total1 = evenNumbersSum(nums1);
-console.log('sum of even numbers is', total1);
+addNum(5,8,9,6);
 //
-function sumOddNumbers(arr){
-    let sum = 0;
-    for(let num of arr){
-        if(num % 2!== 0){
-            sum += num;
-        }
-    }
-    return sum;
+function SUM(fAge, sAge){
+    const totalAge = fAge + sAge;
+    console.log(totalAge)
 }
-console.log(sumOddNumbers([5,15,8,7]));
+SUM(45,15);
 //
-function smallerofTwo(Arr){
-    return Arr[0] < Arr[1] ? Arr[0] : Arr[1];
+function calculator(x,y){
+    const adD = x * y;
+    console.log(adD);
 }
-console.log(smallerofTwo([20,45,78]));
+calculator(20,15);
 //
-function checkAge(age){
-    if(age < 18) return 18;
-    else if (age > 45) return 45;
-    else return age;
+function sub (a,b,c){
+    const marks = a + b + c;
+    console.log(marks);
 }
-console.log(checkAge(12));
-console.log(checkAge(60));
-console.log(checkAge(30));
+sub(60,70,80);
 //
-function sumDivisionBy4(arr){
-    let sum = 0;
-    for(let num of arr){
-        if(num % 4 === 0){
-            sum += num;
-        }
-    }
-    return sum;
+function calculateAge(birthYear){
+    let currentYear = new Date().getFullYear();
+    let age = currentYear - birthYear;
+    return age;
 }
-console.log(sumDivisionBy4([2,4,5,7,8,32,45]));
+console.log('Your age is:', calculateAge(2004), 'years');
 //
-function processNumber(num){
-    if(num < 20){
-        return num * 2;
+function tenTimes(number){
+    const result = number * 10;
+    return result;
+}
+const output = tenTimes(5);
+console.log(output);
+//
+function add(price1, price2){
+    const total = price1 + price2;
+    return total;
+}
+const bill = add(5,80);
+console.log(bill);
+//
+const potato = 35;
+const onion = 62;
+const shirt = 500;
+const pant = 1250;
+function add(price1,price2){
+    return price1 + price2;
+}
+const bill1 = add(potato, onion);
+const bill2 = add(shirt, pant);
+const final = add(bill1, bill2);
+console.log(final);
+//
+function doMath(num1,num2){
+    const sum = num1 + num2;
+    const diff = num1 = num2;
+    const multiply = sum * diff;
+    const result1 = multiply / 2;
+    return result1;
+}
+const result1 = doMath(10,5);
+console.log(result1);
+//
+function isEven(num){
+    if(num % 2 === 0){
+        return true;
     }else{
-        return num/20
+        return false;
     }
 }
-console.log(processNumber(10));
-console.log(processNumber(40));
+console.log(isEven(5));
+console.log(isEven(110));
 //
-function sumNegative(arr){
-    let sum = 0;
-    for(let num of arr){
-        if(num < 0){
-            sum += num;
-        }
+function isOdd(num){
+    if(num % 2 ===1){
+        return true;
     }
-    return sum;
+    return false;
 }
-console.log(sumNegative([5,-3,-10,7,-2]));
+console.log(isOdd(10));
+console.log(isOdd(7));
 //
-function sumDivisionBy3(arr){
-    let sum = 0;
-    for(let num of arr){
-        if(num % 3 === 0){
-            sum += num;
-        }
+function ten(Num){
+    if(Num > 10){
+        return true;
     }
-    return sum;
+    return false;
 }
-console.log(sumDivisionBy3([3,6,7,11,12]));
-
-
+console.log(ten(60));
 //
-function shopping(L,S,Su){
-    const lPrice = 1200;
-    const sPrice = 750;
-    const suPrice = 450;
-
-    const totalPrice = lPrice*L + sPrice*S + suPrice*Su;
-    return totalPrice;
+function checkDivisibleBy13(num){
+    if (num % 13 === 0){
+        return true;
+    }else{
+        return false;
+    }
 }
- console.log(shopping(5,2,5)); // output: 9750
+console.log(checkDivisibleBy13(26));
+console.log(checkDivisibleBy13(30));
+//
+function calculateBill(rice, curry, drinks){
+    return rice + curry + drinks;
+}
+console.log(calculateBill(50,120,30));
+//
+function checkVotingEligibility(age){
+    if(age >= 18){
+        return 'Eligible for Voting';
+    }else{
+        return 'Not Eligible';
+    }
+}
+console.log(checkVotingEligibility(21));
+//
+function getStringLength(str){
+    return str.length;
+}
+console.log(getStringLength('Hello'));
+//
+function calculateAverage(a,b,c){
+    return(a + b+ c) / 3;
+}
+console.log(calculateAverage(10,20,30));
+//
+function checkNegative(num){
+    if(num < 0){
+        return num * -1;
+    }else{
+        return num;
+    }
+}
+console.log(checkNegative(-5));
+console.log(checkNegative(20));
+//
+function evenSizedString(str){
+    const size = str.length;
+    console.log(str, size);
+}
+evenSizedString('Dhaka');
+//
+function evenSizedString1(str){
+    const size = str.length;
+    if(size % 2 === 0){
+        console.log('Even Size');
+    }else{
+        console.log('Odd Size');
+    }
+}
+evenSizedString1('Dhaka');
+//
+function evenSizedString0(str){
+    const size = str.length;
+    if(size % 2 === 0){
+        return true;
+    }else{
+        return false;
+    }
+}
+const isEven0 = evenSizedString0('Human');
+console.log(isEven0);
+//
+function dobuleOrTriple(num, doDouble){
+    if(doDouble === true){
+        const result = num * 2;
+        return result;
+    } else{
+        const result = num * 3;
+        return result;
+    }
+}
+console.log(dobuleOrTriple(5, true));
+console.log(dobuleOrTriple(5,false));
+//
+function numberOfElement(nums){
+    const len = nums.length;
+    return len;
+}
+const len = numberOfElement([12,45,78,45,121245,4,5]);
+console.log(len);
