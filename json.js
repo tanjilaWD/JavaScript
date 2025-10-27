@@ -118,3 +118,46 @@ const projectManagment ={
 }
 console.log(JSON.stringify(projectManagment, null,2));
 //
+const course ={
+    course: [
+        {
+            title: 'JavaScript Basics',
+            instructor: 'Tanjila',
+            duration: '4 weeks',
+            lessons:[
+                {name:'Intro to JS', duration : '30 min', difficulty:'beginner'},
+                {name:'Variable & Data Types', duration:'45 min', difficulty: 'beginner'}
+            ]
+        },
+        {
+            title: 'React Mastery',
+            instructor:'Rafi',
+            duration:'6 weeks',
+            lessons:[
+                {name:'React Fundamentals', duration:'40 min', difficulty: 'intermediate'},
+                {name: 'Hooks & state', duration: '50 min', difficulty:'advanced'}
+            ]
+        }
+    ]
+};
+console.log(JSON.stringify(course,null,2));
+//
+const prodectReviews=[
+    {
+        productName: 'Wireless Headphone',
+        reviewer:{name: 'Tanjila', email:'tanjila@gmail.com'},
+        reating: 4.8,
+        reviewText: 'Great sound quality and battery life!'
+    },
+    {
+        productName: 'Smartwatch',
+        reviewer:{name:'Rafi', email:'rafi@gmail.com'},
+        rating: 4.2,
+        reviewText: 'Stylish design but battery drains fast.'
+    }
+];
+const jsonData1 = JSON.stringify(prodectReviews, null,2);
+console.log(jsonData1);
+
+const jsonArray = JSON.parse(jsonData1);
+console.log(jsonArray);
