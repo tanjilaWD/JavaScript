@@ -73,19 +73,48 @@ console.log(movieJSON);
 const movieObjet = JSON.parse(movieJSON);
 console.log(movieObjet);
 //
-const projectSystem ={
+// const projectSystem ={
+//     projects: [
+//         {
+//             name: " portfolio website ",
+//             description: 'A personal web portfolio',
+//             teamMembers: ['Tanjila', 'Nayaeem', "Sara"],
+//             deadlines: '2025-12-01',
+//             tasks:[
+//                 {title: 'Design UI', assignee: 'Tanjila', status: 'Done'},
+//                 {title:'Develop Backend', assignee: 'Nayeem', status: 'In Progress'},
+//                 {title: 'Testing', assignee: 'Sara', status: 'pending'}
+//             ]
+//         }
+//     ]
+// };
+// console.log(JSON.stringify(projectSystem));
+
+//
+const projectManagment ={
     projects: [
         {
-            name: " portfolio website ",
-            description: 'A personal web portfolio',
-            teamMembers: ['Tanjila', 'Nayaeem', "Sara"],
-            deadlines: '2025-12-01',
-            tasks:[
-                {title: 'Design UI', assignee: 'Tanjila', status: 'Done'},
-                {title:'Develop Backend', assignee: 'Nayeem', status: 'In Progress'},
-                {title: 'Testing', assignee: 'Sara', status: 'pending'}
-            ]
-        }
+        name : 'portfolio website',
+        description: 'personal portfolio showcasing projects and skills.',
+        teamMembers: ['Tanjila','Rafi', 'Mehedi'],
+        deadline:'2025-11-30',
+        tasks:[
+            {title: 'Design UI', assignee:'Tanjila', ststus: 'complate'},
+            {title: 'Develop frontend', assignee:'Rafi', status: 'in progress'},
+            {title: 'Connect backend', assignee:'Mehedi', status:'pending'}
+        ]
+     },
+     {
+        name:'E-commerce App',
+        description: 'online store with product and cart system.',
+        tramMembers: ['Tanjila', 'Nayeem'],
+        deadline: '2025-12-15',
+        tasks: [
+            {title: 'Create API', assignee:'Tanjila', status: 'Complated'},
+            {title:'Integrate fronend', assignee: 'Nayeem', status: 'pending'}
+        ]
+     }
     ]
-};
-console.log(JSON.stringify(projectSystem));
+}
+console.log(JSON.stringify(projectManagment, null,2));
+//
