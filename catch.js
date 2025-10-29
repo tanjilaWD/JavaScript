@@ -62,3 +62,51 @@ function validateInput(input){
 }
 validateInput('Hello');
 validateInput(42);
+
+//
+try{
+    const data = JSON.parse('{ "product": "Data", "price": 450 }');
+    console.log(data);
+} catch(error){
+    console.log("Invalid JSON format");
+}
+//
+function validateInput1(input){
+    try{
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if(!emailPattern.test(input)){
+            throw new Error("Invalid email format");
+        }
+        console.log("valid email:", input);
+    } catch (error){
+        console.error(error.message);
+    }
+}
+validateInput1("testxample.com");
+validateInput1("wrongEmail");
+//
+try{
+    const data =JSON.parse('{ "role": "CEO", "weeklyHours": 1000 }');
+     console.log('week is over');
+} catch(error){
+    console.log('Invalid JSON format');
+}
+//
+function stringOnlyParser(input){
+    if(input === null || input === undefined){
+        console.error('Input must be a String.');
+    }else{
+        console.log('Valid String:', input);
+    }
+}
+stringOnlyParser("");
+stringOnlyParser("Hello");
+//
+try{
+    console.log("Deleting account");
+    throw new Error('Network issue');
+}catch(error){
+    console.log('Failed to delete account');
+} finally{
+    console.log("Account deletion attempt finished");
+}
