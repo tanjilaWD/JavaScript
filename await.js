@@ -58,3 +58,46 @@ async function fetchData(){
         console.error('Error:', error);
     }
 }
+//
+async function fetchUser(){
+    try{
+        const response = await fetch('https://jsonplaceholder.typicode.com/users/2');
+        const data = await response.json();
+        console.log(data);
+    }catch(error){
+        console.log('Error:', error);
+    }
+}
+fetchUser();
+//
+async function loadPosts(){
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts?userId=1');
+    const posts = await response.json();
+    console.log(posts);
+}
+loadPosts();
+//
+async function loadComments(){
+    try{
+        const response = await fetch('https://jsonplaceholder.typicode.com/comments');
+        const comments = await response.json();
+        console.log(comments);
+    }catch(error){
+        console.log('error:', error);
+    }finally{
+        console.log('Request completed');
+    }
+}
+loadComments();
+//
+async function getUserById(id){
+    try{
+        const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
+        if(!response.ok) throw new Error('User not found!');
+        const user = await response.json();
+        console.log(`user ${id}:`, user);
+    }catch(error){
+        console.error('Error:', error.message);
+    }
+}
+getUserById(5);
